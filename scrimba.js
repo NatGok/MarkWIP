@@ -1,13 +1,8 @@
-let bonusPoints = 50
-console.log(bonusPoints)
+let initialValue = document.getElementById("counter")
 
-bonusPoints = bonusPoints + 50
-console.log(bonusPoints)
+let counter = 0
 
-bonusPoints = bonusPoints - 75
-console.log(bonusPoints)
-
-bonusPoints = bonusPoints + 45
-console.log(bonusPoints)
-
-
+function updateValue() {
+    counter = counter + 1
+    initialValue.innerText = counter
+}
